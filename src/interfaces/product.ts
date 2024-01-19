@@ -6,7 +6,7 @@ interface PurchaseOrderType {
   quantityOrdered: number;
 }
 
-interface ColorCodeType {
+export interface ColorCodeType {
   colorCodeId: string;
   styleCode: string;
   description: string;
