@@ -2,9 +2,7 @@
 
 import Image from 'next/image'
 import { Button, Drawer, Form } from 'antd'
-import { StaticImageData } from 'next/image'
 
-import product from '@/data/sample-data.json'
 import Cross from '@/assets/cross.svg'
 import ProductDrawerHeader from '@/components/products/product-drawer/header'
 import ProductDrawerBody from '@/components/products/product-drawer/body'
@@ -13,11 +11,10 @@ import { ProductType } from '@/interfaces/product';
 interface ProductDrawerType {
   open: boolean;
   onSetOpen: (bool: boolean) => void;
-  img: StaticImageData;
   product: ProductType;
 }
 
-export default function ProductDrawer({ open, onSetOpen, img }: ProductDrawerType) {
+export default function ProductDrawer({ open, onSetOpen, product }: ProductDrawerType) {
   const onClose = () => {
     onSetOpen(false);
   };
@@ -46,11 +43,8 @@ export default function ProductDrawer({ open, onSetOpen, img }: ProductDrawerTyp
       className='text-gray-900'
     >
       <Form layout='vertical'>
-        <ProductDrawerHeader />
-        <ProductDrawerBody
-          img={img}
-          product={product}
-        />
+        <ProductDrawerHeader product={product} />
+        <ProductDrawerBody product={product} />
       </Form>
     </Drawer>
   )

@@ -5,11 +5,10 @@ import { ProductType } from '@/interfaces/product'
 import DrawerTable from '@/components/products/product-drawer/table';
 
 interface DrawerBodyType {
-  img: StaticImageData;
   product: ProductType;
 }
 
-export default function DrawerBody({ img, product }: DrawerBodyType) {
+export default function DrawerBody({ product }: DrawerBodyType) {
   return (
     <section className='pt-4 rounded-b-xl flex justify-center'>
       <div className='flex flex-col lg:flex-row justify-between items-center gap-x-4'>
@@ -17,7 +16,7 @@ export default function DrawerBody({ img, product }: DrawerBodyType) {
           <div className='rounded-lg shadow-xl rounded-b-lg'>
             <Image
               className='rounded-t-xl min-w-xs'
-              src={img}
+              src={product.styleImageUrl}
               alt='Product image'
               width={300}
               height={48}

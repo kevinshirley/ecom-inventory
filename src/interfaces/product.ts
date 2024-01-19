@@ -23,6 +23,7 @@ export interface ColorCodeType {
 }
 
 export interface ProductType {
+  styleImageUrl: string;
   styleNumber: string;
   styleCategory: string;
   styleName: string;

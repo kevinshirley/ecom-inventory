@@ -1,16 +1,15 @@
 'use client'
 
 import { useState } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import ProductDrawer from './product-drawer'
 import { ProductType } from '@/interfaces/product';
 
 interface ProductCardType {
-  img: StaticImageData;
   product: ProductType;
 }
 
-export default function ProductCard({ img, product }: ProductCardType) {
+export default function ProductCard({ product }: ProductCardType) {
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -25,7 +24,7 @@ export default function ProductCard({ img, product }: ProductCardType) {
       >
         <div>
           <Image
-            src={img}
+            src={product.styleImageUrl}
             alt='Product image'
             width={400}
             height={48}
@@ -36,7 +35,6 @@ export default function ProductCard({ img, product }: ProductCardType) {
       <ProductDrawer
         open={open}
         onSetOpen={setOpen}
-        img={img}
         product={product}
       />
     </div>

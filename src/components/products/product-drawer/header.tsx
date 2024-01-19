@@ -3,10 +3,10 @@ import { Form, Input, Select, DatePicker } from 'antd'
 import dayjs from 'dayjs'
 import moment from 'moment'
 
-import product from '@/data/sample-data.json'
+import { ProductType } from '@/interfaces/product'
 import DynamiteLogo from '@/assets/dynamite.svg'
 
-export default function DrawerHeader() {
+export default function DrawerHeader({ product }: { product: ProductType }) {
   const dateFormat = 'MMM D';
 
   const handleChange = (value: string) => {
