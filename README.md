@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Code Challenge
 
-## Getting Started
+Design the given web page using your preferred data structure.
 
-First, run the development server:
+![Table Structure](./src/assets/image-1.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Feel free to leverage any UI library, and we recommend [Antd](https://ant.design/components/table). While showcasing your design prowess, consider the following guidelines:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Use [sample-data.json](./src/sample-data.json) to populate the table.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Each table row signifies a unique SKU (color code). You may ignore the (F-Unit Sales, F-UPAS, F-Inventory OH and F-WOS columns)
+2. The store count total should display the MAXIMUM value.
+3. Rows may or may not be linked to purchase orders. If applicable, allow rows to expand for viewing associated purchase orders.
+4. Implement a sorting mechanism to arrange rows based on price.
+5. Upon selecting a row, display its corresponding image.
+6. Prioritize crafting clean, modular, and well-documented code.
+7. Earn bonus points for achieving responsiveness and an aesthetically pleasing user interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Feel free to structure the data creatively; we've provided a sample in `src/sample-data.json`. This challenge assesses your expertise in both native JS/TS and React concepts. Best of luck!
 
-## Learn More
+# SQL Challenge
+Explore [Top Competitors](https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true)
 
-To learn more about Next.js, take a look at the following resources:
+# Bonus
+- Build a backend to fetch the data displayed on the table.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Possible Take-Home
+For an added challenge, consider the following enhancements:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Integrate a backend with a database to fetch data dynamically upon search.
+- Infuse your creativity by adding extra features to enhance user experience.

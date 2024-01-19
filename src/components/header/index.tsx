@@ -19,15 +19,15 @@ export default function Header() {
         <Image
           src={SearchLogo}
           alt='Profile'
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           priority
         />
         <Image
           src={ProfileLogo}
           alt='Profile'
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           priority
         />
       </div>
