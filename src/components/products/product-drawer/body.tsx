@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from 'next/image'
 import { ProductType } from '@/interfaces/product'
+import DrawerTable from '@/components/products/product-drawer/table';
 
 interface DrawerBodyType {
   img: StaticImageData;
@@ -10,8 +11,8 @@ interface DrawerBodyType {
 
 export default function DrawerBody({ img, product }: DrawerBodyType) {
   return (
-    <section className='flex justify-between pt-4 rounded-b-xl'>
-      <div className='shadow-xl rounded-b-lg'>
+    <section className='flex justify-between pt-4 rounded-b-xl gap-x-4'>
+      <div className='shadow-xl rounded-b-lg' style={{ maxHeight: '35rem' }}>
         <div className='rounded-lg'>
           <Image
             className='rounded-t-xl'
@@ -27,7 +28,9 @@ export default function DrawerBody({ img, product }: DrawerBodyType) {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className=''>
+        <DrawerTable product={product} />
+      </div>
     </section>
   )
 }
