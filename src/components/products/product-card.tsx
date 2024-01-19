@@ -1,10 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import ProductDrawer from './product-drawer'
+import { ProductType } from '@/interfaces/product';
 
-export default function ProductCard({ img }: any) {
+interface ProductCardType {
+  img: StaticImageData;
+  product: ProductType;
+}
+
+export default function ProductCard({ img, product }: ProductCardType) {
+  console.log({ img })
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -30,6 +37,8 @@ export default function ProductCard({ img }: any) {
       <ProductDrawer
         open={open}
         onSetOpen={setOpen}
+        img={img}
+        product={product}
       />
     </>
   )
