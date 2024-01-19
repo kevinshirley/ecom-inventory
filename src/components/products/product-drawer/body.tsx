@@ -1,14 +1,20 @@
 'use clint'
 
-import Image, { StaticImageData } from 'next/image'
+import { useContext } from 'react'
+import Image from 'next/image'
 import { ProductType } from '@/interfaces/product'
-import DrawerTable from '@/components/products/product-drawer/table';
+import DrawerTable from '@/components/products/product-drawer/table'
+import { DrawerContext } from '@/context/useDrawer'
 
 interface DrawerBodyType {
   product: ProductType;
 }
 
 export default function DrawerBody({ product }: DrawerBodyType) {
+  const drawerContext = useContext(DrawerContext);
+
+  console.log({ drawerContext });
+
   return (
     <section className='pt-4 rounded-b-xl flex justify-center'>
       <div className='flex flex-col lg:flex-row justify-between items-center gap-x-4'>

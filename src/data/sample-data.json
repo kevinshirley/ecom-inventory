@@ -2,15 +2,15 @@
   "products": [
     {
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-1.5fa1396f.webp&w=640&q=75",
-      "styleNumber": "100083599",
+      "styleNumber": "100083699",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Micro Mini Shorts",
       "colorCodes": [
         {
           "colorCodeId": "07J",
-          "styleCode": "100083599",
+          "styleCode": "100083699",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 44.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,
@@ -130,13 +130,13 @@
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-2.dd64b135.jpeg&w=640&q=75",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Julietta Square Neck Vest",
       "colorCodes": [
         {
           "colorCodeId": "07J",
           "styleCode": "100083599",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 59.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,
@@ -256,13 +256,13 @@
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-3.e4391b3e.webp&w=640&q=75",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Everlee Flounce Mini Skirt",
       "colorCodes": [
         {
           "colorCodeId": "07J",
           "styleCode": "100083599",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 49.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,
@@ -382,13 +382,13 @@
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-4.0b930bcf.jpeg&w=640&q=75",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Floral Mesh Maxi Dress",
       "colorCodes": [
         {
           "colorCodeId": "07J",
           "styleCode": "100083599",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 69.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,
@@ -508,13 +508,13 @@
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-5.006090fc.jpeg&w=640&q=75",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Paneled Flare Mini Dress",
       "colorCodes": [
         {
           "colorCodeId": "07J",
           "styleCode": "100083599",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 59.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,
@@ -634,13 +634,13 @@
       "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-6.3d12ef50.jpeg&w=640&q=75",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
-      "styleName": "Justinia Straight Denim",
+      "styleName": "Long Sleeve Turtleneck Top",
       "colorCodes": [
         {
           "colorCodeId": "07J",
           "styleCode": "100083599",
           "description": "Indigo - Medium",
-          "currentPrice": 64.95,
+          "currentPrice": 34.95,
           "inventoryOnHand": 8229,
           "imageURL": "https://picsum.photos/200/200",
           "weekToDateUnitSales": 131,

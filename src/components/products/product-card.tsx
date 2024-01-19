@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import ProductDrawer from './product-drawer'
 import { ProductType } from '@/interfaces/product';
+import { DrawerContext } from '@/context/useDrawer'
 
 interface ProductCardType {
   product: ProductType;
@@ -32,11 +33,13 @@ export default function ProductCard({ product }: ProductCardType) {
           />
         </div>
       </div>
-      <ProductDrawer
-        open={open}
-        onSetOpen={setOpen}
-        product={product}
-      />
+      <DrawerContext.Provider value={{ selectedColorCode: {} }}>
+        <ProductDrawer
+          open={open}
+          onSetOpen={setOpen}
+          product={product}
+        />
+      </DrawerContext.Provider>
     </div>
   )
 }
