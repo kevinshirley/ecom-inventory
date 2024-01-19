@@ -14,7 +14,7 @@ export default function ProductCard({ img }: any) {
   return (
     <>
       <div
-        className='flex justify-center'
+        className='flex justify-center cursor-pointer'
         onClick={showDrawer}
       >
         <div>

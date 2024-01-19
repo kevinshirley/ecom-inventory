@@ -23,3 +23,11 @@ body {
 .ant-drawer-content-wrapper {
   height: 95vh !important;
 }
+
+.ant-drawer-content {
+  border-radius: 12px;
+}
+
+.border-left {
+  border-left: 1px solid;
+}
