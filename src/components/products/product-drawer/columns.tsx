@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import moment from 'moment'
+import { ColorCodeType } from '@/interfaces/product'
 
 interface DataType {
   key: React.Key;
@@ -13,6 +15,20 @@ export const columns: DataType[] = [
     title: 'Color Code',
     dataIndex: 'colorCodeId',
     key: 'colorCodeId',
+    render: (colorCodeId: string, record: ColorCodeType) => {
+      return (
+        <span className='flex flex-row items-center'>
+          <img
+            src={record.imageURL}
+            alt='Cross icon'
+            width={18}
+            height={18}
+            style={{ borderRadius: '50%' }}
+          />
+          <span className='pl-1'>{colorCodeId}</span>
+        </span>
+      )
+    }
   },
   { title: 'Style Code', dataIndex: 'styleCode', key: 'styleCode' },
   { title: 'Color Code Description', dataIndex: 'description', key: 'description' },

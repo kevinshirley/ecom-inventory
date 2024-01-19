@@ -9,7 +9,7 @@
       "description": "Indigo - Medium",
       "currentPrice": 64.95,
       "inventoryOnHand": 8229,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 131,
       "firstSaleDate": "2016-08-01T00:00:00",
       "storeCount": {
@@ -31,7 +31,7 @@
       "description": "Red - Light",
       "currentPrice": 74.95,
       "inventoryOnHand": 9129,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 141,
       "firstSaleDate": "2017-08-01T00:00:00",
       "storeCount": {
@@ -46,7 +46,7 @@
       "description": "Blue - Dark",
       "currentPrice": 84.95,
       "inventoryOnHand": 10229,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 151,
       "firstSaleDate": "2018-08-01T00:00:00",
       "storeCount": {
@@ -68,7 +68,7 @@
       "description": "Green - Light",
       "currentPrice": 94.95,
       "inventoryOnHand": 11229,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 161,
       "firstSaleDate": "2019-08-01T00:00:00",
       "storeCount": {
@@ -90,7 +90,7 @@
       "description": "Yellow - Medium",
       "currentPrice": 104.95,
       "inventoryOnHand": 12229,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 171,
       "firstSaleDate": "2020-08-01T00:00:00",
       "storeCount": {
@@ -112,7 +112,7 @@
       "description": "Purple - Dark",
       "currentPrice": 114.95,
       "inventoryOnHand": 13229,
-      "imageURL": "https://picsum.photos/200/300",
+      "imageURL": "https://picsum.photos/200/200",
       "weekToDateUnitSales": 181,
       "firstSaleDate": "2021-08-01T00:00:00",
       "storeCount": {
