@@ -10,7 +10,7 @@ import product from '@/data/sample-data.json'
 
 export default function Products() {
   return (
-    <section className='grid gap-4 grid-cols-4 grid-rows-3 py-8 px-8'>
+    <section className='grid gap-4 grid-cols-1 lg:grid-cols-4 py-8 lg:px-8 px-4'>
       <ProductCard
         img={productImage1}
         product={product}

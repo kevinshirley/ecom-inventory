@@ -18,9 +18,9 @@ export default function ProductCard({ img, product }: ProductCardType) {
   };
 
   return (
-    <>
+    <div className='relative'>
       <div
-        className='flex justify-center cursor-pointer'
+        className='flex justify-center cursor-pointer product-card-container'
         onClick={showDrawer}
       >
         <div>
@@ -39,6 +39,6 @@ export default function ProductCard({ img, product }: ProductCardType) {
         img={img}
         product={product}
       />
-    </>
+    </div>
   )
 }
