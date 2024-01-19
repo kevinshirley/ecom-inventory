@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-1.5fa1396f.webp&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-1.webp",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-2.dd64b135.jpeg&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-2.jpeg",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-3.e4391b3e.webp&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-3.webp",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-4.0b930bcf.jpeg&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-4.jpeg",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-5.006090fc.jpeg&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-5.jpeg",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
@@ -631,7 +631,7 @@
       ]
     },
     {
-      "styleImageUrl": "https://ecom-inventory.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-image-6.3d12ef50.jpeg&w=640&q=75",
+      "styleImageUrl": "https://ecom-inventory.vercel.app/product-image-6.jpeg",
       "styleNumber": "100083599",
       "styleCategory": "Denim Pants",
       "styleName": "Justinia Straight Denim",
