@@ -12,8 +12,8 @@ interface DrawerBodyType {
 export default function DrawerBody({ img, product }: DrawerBodyType) {
   return (
     <section className='pt-4 rounded-b-xl flex justify-center'>
-      <div className='flex justify-between gap-x-4'>
-        <div className='max-w-xs' style={{ maxHeight: '35rem' }}>
+      <div className='flex flex-col lg:flex-row justify-between items-center gap-x-4'>
+        <div className='max-w-xs mb-6' style={{ maxHeight: '35rem' }}>
           <div className='rounded-lg shadow-xl rounded-b-lg'>
             <Image
               className='rounded-t-xl min-w-xs'

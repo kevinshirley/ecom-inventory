@@ -14,8 +14,8 @@ export default function DrawerHeader() {
   };
 
   return (
-    <header className='flex justify-between border rounded-xl p-8'>
-      <div className='flex flex-row items-center gap-x-3'>
+    <header className='flex flex-col lg:flex-row justify-start lg:justify-between border rounded-xl p-8'>
+      <div className='flex flex-col lg:flex-row lg:items-center gap-x-3'>
         <Image
           src={DynamiteLogo}
           alt='Dynamite Logo'
@@ -23,17 +23,18 @@ export default function DrawerHeader() {
           height={48}
           priority
         />
-        <span className='text-gray-300'>|</span>
-        <span>{product.styleCategory}</span>
-        <span className='text-gray-300'>|</span>
-        <span>{product.styleName}</span>
+        <span className='text-gray-300 hidden lg:block'>|</span>
+        <span className='text-gray-500 lg:text-black pt-1 lg:pt-0'>{product.styleCategory}</span>
+        <span className='text-gray-300 hidden lg:block'>|</span>
+        <span className='text-gray-500 lg:text-black pt-1 lg:pt-0'>{product.styleName}</span>
       </div>
-      <div className='flex flex-row gap-x-3'>
+      <div className='flex flex-col lg:flex-row gap-x-3 pt-3 lg:pt-0'>
         <Form.Item
-          className='mb-0'
+          className='lg:mb-0'
           name='owner'
         >
           <Select
+            className='w-full'
             defaultValue='lucy'
             style={{ width: 120 }}
             onChange={handleChange}
@@ -45,7 +46,7 @@ export default function DrawerHeader() {
           />
         </Form.Item>
         <Form.Item
-          className='mb-0'
+          className='lg:mb-0'
           name='owner'
         >
           <Select
@@ -60,7 +61,7 @@ export default function DrawerHeader() {
           />
         </Form.Item>
         <Form.Item
-          className='mb-0'
+          className='lg:mb-0'
           name='url'
         >
           <Input
