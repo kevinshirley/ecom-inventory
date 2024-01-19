@@ -11,25 +11,27 @@ interface DrawerBodyType {
 
 export default function DrawerBody({ img, product }: DrawerBodyType) {
   return (
-    <section className='flex justify-between pt-4 rounded-b-xl gap-x-4'>
-      <div className='shadow-xl rounded-b-lg' style={{ maxHeight: '35rem' }}>
-        <div className='rounded-lg'>
-          <Image
-            className='rounded-t-xl'
-            src={img}
-            alt='Product image'
-            width={300}
-            height={48}
-            priority
-          />
-          <div className='flex flex-col py-4 px-4'>
-            <span className='bold font-bold text-lg'>{product.colorCodes[0].description}</span>
-            <span className='text-lg'>{product.colorCodes[0].currentPrice}</span>
+    <section className='pt-4 rounded-b-xl flex justify-center'>
+      <div className='flex justify-between gap-x-4'>
+        <div className='max-w-xs' style={{ maxHeight: '35rem' }}>
+          <div className='rounded-lg shadow-xl rounded-b-lg'>
+            <Image
+              className='rounded-t-xl min-w-xs'
+              src={img}
+              alt='Product image'
+              width={300}
+              height={48}
+              priority
+            />
+            <div className='flex flex-col py-4 px-4'>
+              <span className='bold font-bold text-lg'>{product.colorCodes[0].description}</span>
+              <span className='text-lg'>{product.colorCodes[0].currentPrice}</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className=''>
-        <DrawerTable product={product} />
+        <div className=''>
+          <DrawerTable product={product} />
+        </div>
       </div>
     </section>
   )

@@ -11,7 +11,6 @@ interface ProductCardType {
 }
 
 export default function ProductCard({ img, product }: ProductCardType) {
-  console.log({ img })
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
