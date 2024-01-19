@@ -29,7 +29,7 @@ export default function DrawerBody({ img, product }: DrawerBodyType) {
             </div>
           </div>
         </div>
-        <div className=''>
+        <div className='max-w-xs md:max-w-lg lg:max-w-full overflow-x-auto'>
           <DrawerTable product={product} />
         </div>
       </div>

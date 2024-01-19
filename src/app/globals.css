@@ -47,3 +47,8 @@ body {
 .ant-select, .ant-picker {
   width: 100% !important;
 }
+
+.ant-table-cell {
+  @apply whitespace-nowrap;
+  @apply lg:whitespace-normal;
+}
