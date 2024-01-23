@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import moment from 'moment'
 import { ColorCodeType } from '@/interfaces/product'
+import { useAppContext } from '@/context/app-context'
 
 interface DataType {
   key: React.Key;
@@ -8,6 +9,22 @@ interface DataType {
   dataIndex: string;
   sorter?: (a: any, b: any) => number;
   render?: any;
+}
+
+const DrawerProductImage = ({
+  colorCodeId,
+  record,
+}: { colorCodeId: string, record: ColorCodeType }) => {
+  const { setSelectedColorCode } = useAppContext();
+
+  return (
+    <span
+      className='text-blue-400 cursor-pointer'
+      onClick={() => setSelectedColorCode(record)}
+    >
+      {colorCodeId}
+    </span>
+  )
 }
 
 export const columns: DataType[] = [
@@ -30,7 +47,19 @@ export const columns: DataType[] = [
       )
     }
   },
-  { title: 'Style Code', dataIndex: 'styleCode', key: 'styleCode' },
+  {
+    title: 'Style Code',
+    dataIndex: 'styleCode',
+    key: 'styleCode',
+    render: (colorCodeId: string, record: ColorCodeType) => {
+      return (
+        <DrawerProductImage
+          colorCodeId={colorCodeId}
+          record={record}
+        />
+      )
+    }
+  },
   { title: 'Color Code Description', dataIndex: 'description', key: 'description' },
   {
     title: 'Current Price',

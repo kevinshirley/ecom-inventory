@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import ProductDrawer from './product-drawer'
-import { ProductType } from '@/interfaces/product';
-import { DrawerContext } from '@/context/useDrawer'
+import { ProductType } from '@/interfaces/product'
+import { useAppContext } from '@/context/app-context'
 
 interface ProductCardType {
   product: ProductType;
@@ -12,9 +12,11 @@ interface ProductCardType {
 
 export default function ProductCard({ product }: ProductCardType) {
   const [open, setOpen] = useState(false);
+  const { setSelectedColorCode } = useAppContext();
 
   const showDrawer = () => {
     setOpen(true);
+    setSelectedColorCode(product.colorCodes[0])
   };
 
   return (
@@ -33,13 +35,11 @@ export default function ProductCard({ product }: ProductCardType) {
           />
         </div>
       </div>
-      <DrawerContext.Provider value={{ selectedColorCode: {} }}>
-        <ProductDrawer
-          open={open}
-          onSetOpen={setOpen}
-          product={product}
-        />
-      </DrawerContext.Provider>
+      <ProductDrawer
+        open={open}
+        onSetOpen={setOpen}
+        product={product}
+      />
     </div>
   )
 }

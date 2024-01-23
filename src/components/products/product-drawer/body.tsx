@@ -1,19 +1,18 @@
 'use clint'
 
-import { useContext } from 'react'
 import Image from 'next/image'
 import { ProductType } from '@/interfaces/product'
 import DrawerTable from '@/components/products/product-drawer/table'
-import { DrawerContext } from '@/context/useDrawer'
+import { useAppContext } from '@/context/app-context'
 
 interface DrawerBodyType {
   product: ProductType;
 }
 
 export default function DrawerBody({ product }: DrawerBodyType) {
-  const drawerContext = useContext(DrawerContext);
+  const { selectedColorCode } = useAppContext()
 
-  console.log({ drawerContext });
+  console.log({ selectedColorCode })
 
   return (
     <section className='pt-4 rounded-b-xl flex justify-center'>
