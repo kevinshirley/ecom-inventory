@@ -13,8 +13,6 @@ interface DrawerBodyType {
 export default function DrawerBody({ product }: DrawerBodyType) {
   const { selectedColorCode } = useAppContext()
 
-  console.log({ selectedColorCode })
-
   return (
     <section className='pt-4 rounded-b-xl flex justify-center'>
       <div className='flex flex-col lg:flex-row justify-between items-center gap-x-4'>
