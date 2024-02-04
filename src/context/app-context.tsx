@@ -10,14 +10,14 @@ import {
 } from 'react'
 import { ColorCodeType } from '@/interfaces/product'
 
-interface AppContextProvierType {
+interface AppContextProviderType {
   selectedColorCode: ColorCodeType | null;
   setSelectedColorCode: Dispatch<SetStateAction<ColorCodeType | null>>;
 }
 
-export const AppContext = createContext<AppContextProvierType | null>(null);
+export const AppContext = createContext<AppContextProviderType | null>(null);
 
-export default function AppContextProvier({ children }: { children: ReactNode }) {
+export default function AppContextProvider({ children }: { children: ReactNode }) {
   const [selectedColorCode, setSelectedColorCode] = useState<ColorCodeType | null>(null);
 
   return (
